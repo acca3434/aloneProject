@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title></title>
+        <!-- 아이콘 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <style>
+:root {
+  --highlight: #5756e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a4b1e6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  border-radius: 32px;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100px;
+  box-shadow: 0 14px 28px #8f9cd4, 0 10px 10px #8f9cd4;
+}
+
+.list-item {
+  list-style-type: none;
+  flex-basis: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #555;
+  transform: translateY(0);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.list-item-name {
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  transform: translate(0, 50px);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+
+.list-item:hover {
+  color: var(--highlight);
+  transform: translateY(-6px);
+}
+.list-item:hover .list-item-name {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+    padding-bottom: 20px;
+  }
+
+  .list-item {
+    flex-basis: auto;
+  }
+
+  .list-item:hover .list-item-name {
+    transform: translateY(25px);
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <li class="list-item"><i class="fa-solid fa-house"></i>
+              <span class="list-item-name">Home</span>
+            </li>
+            <li class="list-item">
+              <i class="fa-solid fa-user"></i>
+              <span class="list-item-name">Profile</span>
+            </li>
+            <li class="list-item">
+              <i class="fa-solid fa-gear"></i>
+              <span class="list-item-name">Settings</span>
+            </li>
+            <li class="list-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="list-item-name">Bag</span>
+            </li>
+            <li class="list-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="list-item-name">Bag</span>
+              </li>
+              <li class="list-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="list-item-name">Bag</span>
+              </li>
+          </div>
+    </body>
+</html>

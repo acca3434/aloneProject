@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title></title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 300px);
+                grid-template-rows: repeat(4,300px);
+                grid-auto-rows: 1fr;
+                gap: 20px 20px;
+                grid-auto-flow: row;
+                grid-template-areas: "chat-site1 chat-site2 chat-site3 chat-site4" "chat-site5 chat-site6 chat-site7 chat-site8" "chat-site9 chat-site10 chat-site11 chat-site12" "chat-site13 chat-site14 chat-site15 chat-site16";
+                justify-content: center;
+                
+            }
+
+            .chat-site1 {
+                grid-area: chat-site1;
+                background-color: aqua;
+            }
+
+            .chat-site2 {
+                background-color: aqua;
+                grid-area: chat-site2;
+            }
+
+            .chat-site3 {
+                background-color: aqua;
+                grid-area: chat-site3;
+            }
+
+            .chat-site4 {
+                background-color: aqua;
+                grid-area: chat-site4;
+            }
+
+            .chat-site5 {
+                background-color: aqua;
+                grid-area: chat-site5;
+            }
+
+            .chat-site6 {
+                background-color: aqua;
+                grid-area: chat-site6;
+            }
+
+            .chat-site7 {
+                background-color: aqua;
+                grid-area: chat-site7;
+            }
+
+            .chat-site8 {
+                background-color: aqua;
+                grid-area: chat-site8;
+            }
+
+            .chat-site9 {
+                background-color: aqua;
+                grid-area: chat-site9;
+            }
+
+            .chat-site10 {
+                background-color: aqua;
+                grid-area: chat-site10;
+            }
+
+            .chat-site11 {
+                background-color: aqua;
+                grid-area: chat-site11;
+            }
+
+            .chat-site12 {
+                background-color: aqua;
+                grid-area: chat-site12;
+            }
+
+            .chat-site13 {
+                background-color: aqua;
+                grid-area: chat-site13;
+            }
+
+            .chat-site14 {
+                background-color: aqua;
+                grid-area: chat-site14;
+            }
+
+            .chat-site15 {
+                background-color: aqua;
+                grid-area: chat-site15;
+            }
+
+            .chat-site16 {
+                background-color: aqua;
+                grid-area: chat-site16;
+            }
+
+            @media all and (-ms-high-contrast:none) {
+                .container {
+                    display: -ms-grid;
+                    -ms-grid-columns: repeat(4, 300px);
+                    -ms-grid-rows: repeat(4,300px);
+                }
+
+                .chat-site1 {
+                    -ms-grid-row: 1;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site2 {
+                    -ms-grid-row: 1;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 2;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site3 {
+                    -ms-grid-row: 1;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 3;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site4 {
+                    -ms-grid-row: 1;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 4;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site5 {
+                    -ms-grid-row: 2;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site6 {
+                    -ms-grid-row: 2;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 2;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site7 {
+                    -ms-grid-row: 2;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 3;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site8 {
+                    -ms-grid-row: 2;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 4;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site9 {
+                    -ms-grid-row: 3;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site10 {
+                    -ms-grid-row: 3;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 2;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site11 {
+                    -ms-grid-row: 3;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 3;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site12 {
+                    -ms-grid-row: 3;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 4;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site13 {
+                    -ms-grid-row: 4;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 1;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site14 {
+                    -ms-grid-row: 4;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 2;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site15 {
+                    -ms-grid-row: 4;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 3;
+                    -ms-grid-column-span: 1;
+                }
+
+                .chat-site16 {
+                    -ms-grid-row: 4;
+                    -ms-grid-row-span: 1;
+                    -ms-grid-column: 4;
+                    -ms-grid-column-span: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="chat-site1"></div>
+            <div class="chat-site2"></div>
+            <div class="chat-site3"></div>
+            <div class="chat-site4"></div>
+            <div class="chat-site5"></div>
+            <div class="chat-site6"></div>
+            <div class="chat-site7"></div>
+            <div class="chat-site8"></div>
+            <div class="chat-site9"></div>
+            <div class="chat-site10"></div>
+            <div class="chat-site11"></div>
+            <div class="chat-site12"></div>
+            <div class="chat-site13"></div>
+            <div class="chat-site14"></div>
+            <div class="chat-site15"></div>
+            <div class="chat-site16"></div>
+        </div>
+    </body>
+</html>
